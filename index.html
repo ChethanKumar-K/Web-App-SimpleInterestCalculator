@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="sheets.js"></script>
+    <title>Web App-Simple Interest Calculator</title>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <p><label for="Amount" >Amount</label>
+            <input type="number" id="principal" name="number">
+        </p>
+        <label for="Interest">Interest Rate</label>
+        <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()">
+        <span id="rate_val">10.25</span>% <br>
+        <p>
+        No. of years 
+        <select name="years" id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select> <br/>
+        </p>
+        <button onclick="compute()" id="button" value="ComputeInterest">ComputeInterest</button>
+        <p  id="result"></p>
+        <footer>
+            &#169; This Calculator belongs to Chethan
+        </footer>
+    </div>
+    <p id="demo"></p>
+</body>
+</html>
